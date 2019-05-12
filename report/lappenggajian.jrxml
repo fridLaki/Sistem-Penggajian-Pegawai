@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="lappenggajian" pageWidth="936" pageHeight="612" orientation="Landscape" columnWidth="896" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     transaksipenggajianpegawai.`idTransaksi` AS transaksipenggajianpegawai_idTransaksi,
+     transaksipenggajianpegawai.`gapok` AS transaksipenggajianpegawai_gapok,
+     transaksipenggajianpegawai.`tunjanganHonor` AS transaksipenggajianpegawai_tunjanganHonor,
+     transaksipenggajianpegawai.`tunjanganJabatan` AS transaksipenggajianpegawai_tunjanganJabatan,
+     transaksipenggajianpegawai.`tunjanganKeluarga` AS transaksipenggajianpegawai_tunjanganKeluarga,
+     transaksipenggajianpegawai.`tunjanganPangan` AS transaksipenggajianpegawai_tunjanganPangan,
+     transaksipenggajianpegawai.`id` AS transaksipenggajianpegawai_id,
+     transaksipenggajianpegawai.`namaPeg` AS transaksipenggajianpegawai_namaPeg,
+     transaksipenggajianpegawai.`tunjanganFungsional` AS transaksipenggajianpegawai_tunjanganFungsional,
+     transaksipenggajianpegawai.`PKP` AS transaksipenggajianpegawai_PKP,
+     transaksipenggajianpegawai.`PPhPsl21` AS transaksipenggajianpegawai_PPhPsl21,
+     transaksipenggajianpegawai.`PTKP` AS transaksipenggajianpegawai_PTKP,
+     transaksipenggajianpegawai.`jumlahPengurangan` AS transaksipenggajianpegawai_jumlahPengurangan,
+     transaksipenggajianpegawai.`jumlahPotongan` AS transaksipenggajianpegawai_jumlahPotongan,
+     transaksipenggajianpegawai.`jumlahTunjangan` AS transaksipenggajianpegawai_jumlahTunjangan,
+     transaksipenggajianpegawai.`penghasilanBruto` AS transaksipenggajianpegawai_penghasilanBruto,
+     transaksipenggajianpegawai.`penghasilanNeto` AS transaksipenggajianpegawai_penghasilanNeto,
+     transaksipenggajianpegawai.`penguranganJabatan` AS transaksipenggajianpegawai_penguranganJabatan,
+     transaksipenggajianpegawai.`penguranganSiswa` AS transaksipenggajianpegawai_penguranganSiswa,
+     transaksipenggajianpegawai.`terima` AS transaksipenggajianpegawai_terima,
+     transaksipenggajianpegawai.`bulan` AS transaksipenggajianpegawai_bulan,
+     masterpegawai.`id` AS masterpegawai_id,
+     masterpegawai.`golongan` AS masterpegawai_golongan,
+     masterpegawai.`jabatan` AS masterpegawai_jabatan,
+     masterpegawai.`masa_kerja_golongan` AS masterpegawai_masa_kerja_golongan,
+     masterpegawai.`nama` AS masterpegawai_nama,
+     masterpegawai.`nip` AS masterpegawai_nip,
+     masterpegawai.`pendidikan` AS masterpegawai_pendidikan,
+     masterpegawai.`status_kepegawaian` AS masterpegawai_status_kepegawaian,
+     masterpegawai.`status_sipil` AS masterpegawai_status_sipil,
+     masterpegawai.`sub_golongan` AS masterpegawai_sub_golongan,
+     masterpegawai.`sub_status_Kepegawaian` AS masterpegawai_sub_status_Kepegawaian,
+     masterpegawai.`tingkat` AS masterpegawai_tingkat
+FROM
+     `masterpegawai` masterpegawai INNER JOIN `transaksipenggajianpegawai` transaksipenggajianpegawai ON masterpegawai.`id` = transaksipenggajianpegawai.`id`]]>
+	</queryString>
+	<field name="transaksipenggajianpegawai_idTransaksi" class="java.lang.Integer"/>
+	<field name="transaksipenggajianpegawai_gapok" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_tunjanganHonor" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_tunjanganJabatan" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_tunjanganKeluarga" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_tunjanganPangan" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_id" class="java.lang.Integer"/>
+	<field name="transaksipenggajianpegawai_namaPeg" class="java.lang.String"/>
+	<field name="transaksipenggajianpegawai_tunjanganFungsional" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_PKP" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_PPhPsl21" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_PTKP" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_jumlahPengurangan" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_jumlahPotongan" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_jumlahTunjangan" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_penghasilanBruto" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_penghasilanNeto" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_penguranganJabatan" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_penguranganSiswa" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_terima" class="java.lang.Long"/>
+	<field name="transaksipenggajianpegawai_bulan" class="java.sql.Timestamp"/>
+	<field name="masterpegawai_id" class="java.lang.Integer"/>
+	<field name="masterpegawai_golongan" class="java.lang.String"/>
+	<field name="masterpegawai_jabatan" class="java.lang.String"/>
+	<field name="masterpegawai_masa_kerja_golongan" class="java.lang.String"/>
+	<field name="masterpegawai_nama" class="java.lang.String"/>
+	<field name="masterpegawai_nip" class="java.lang.String"/>
+	<field name="masterpegawai_pendidikan" class="java.lang.String"/>
+	<field name="masterpegawai_status_kepegawaian" class="java.lang.String"/>
+	<field name="masterpegawai_status_sipil" class="java.lang.String"/>
+	<field name="masterpegawai_sub_golongan" class="java.lang.String"/>
+	<field name="masterpegawai_sub_status_Kepegawaian" class="java.lang.String"/>
+	<field name="masterpegawai_tingkat" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[transaksipenggajianpegawai_namaPeg]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="30" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{transaksipenggajianpegawai_namaPeg}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

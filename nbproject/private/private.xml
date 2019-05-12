@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/dao/master/MasterPegawaiDao.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/dao/BaseDaoHibernate.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/validator/implement/MasterPegawaiValidator.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/spring.xml</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/validator/Validator.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/entity/DetailPerincianHonor.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/main/Main.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/dao/master/DetailPerincianHonorDao.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/main/SpringManager.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/service/master/MasterServiceImplementasi.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/view/TambahTransaksiPenggajianDialog.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/hibernate.cfg.xml</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/main/View.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/validator/AbstractValidator.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/view/SetupTunjanganPegawaiDialog.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/com/penggajian/validator/ValidatorException.java</file>
+            <file>file:/D:/Sistem%20Penggajian%20Pegawai%20Mardi%20Yuana/src/jdbc.properties</file>
+        </group>
+    </open-files>
+</project-private>

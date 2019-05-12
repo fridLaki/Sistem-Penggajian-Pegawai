@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="67803e57-bcbc-460e-8d33-91cfa1a02dd1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     detail_pembelian.`id` AS detail_pembelian_id,
+     detail_pembelian.`harga` AS detail_pembelian_harga,
+     detail_pembelian.`jumlah` AS detail_pembelian_jumlah,
+     detail_pembelian.`id_detail_barang` AS detail_pembelian_id_detail_barang,
+     detail_pembelian.`id_pembelian` AS detail_pembelian_id_pembelian,
+     beli.`id` AS beli_id,
+     beli.`harga` AS beli_harga
+FROM
+     `detail_pembelian` detail_pembelian,
+     `beli` beli]]>
+	</queryString>
+	<field name="detail_pembelian_id" class="java.lang.Long"/>
+	<field name="detail_pembelian_harga" class="java.lang.Long"/>
+	<field name="detail_pembelian_jumlah" class="java.lang.Integer"/>
+	<field name="detail_pembelian_id_detail_barang" class="java.lang.String"/>
+	<field name="detail_pembelian_id_pembelian" class="java.lang.Long"/>
+	<field name="beli_id" class="java.lang.Integer"/>
+	<field name="beli_harga" class="java.lang.String"/>
+	<variable name="variable1" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="58" y="0" width="100" height="20" uuid="2efad779-2eed-4b6e-b3ce-994a265777c7"/>
+				<text><![CDATA[detail_pembelian_harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="2" width="100" height="20" uuid="c7252cb0-8cfc-4e12-b567-4ee3eb11fc28"/>
+				<text><![CDATA[beli_harga]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField pattern="#,##0">
+				<reportElement x="58" y="0" width="100" height="20" uuid="ed7f0931-7a48-4faf-a515-1c4ccb25ede6"/>
+				<textFieldExpression><![CDATA[$F{detail_pembelian_harga}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="false">
+				<reportElement x="192" y="0" width="100" height="20" uuid="1a9bc8e2-e184-43d5-8b31-dac6b4fa6147"/>
+				<textFieldExpression><![CDATA[$F{beli_harga}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="315" y="0" width="100" height="20" uuid="92fc5953-7ab3-4ff6-81ca-b21d26228eeb"/>
+				<textFieldExpression><![CDATA[$V{variable1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

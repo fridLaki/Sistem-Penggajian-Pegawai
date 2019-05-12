@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/penggajianmy</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    
+    <mapping class="com.penggajian.entity.MasterPegawai"/>
+    <mapping class="com.penggajian.entity.PokokHonor"/>
+    <mapping class="com.penggajian.entity.TabelGapokCapegPegawai"/>
+    <mapping class="com.penggajian.entity.TunjanganKeluarga"/>
+    <mapping class="com.penggajian.entity.TabelTunjanganJabatan"/>
+    <mapping class="com.penggajian.entity.TunjanganFungsional"/>
+    <mapping class="com.penggajian.entity.TunjanganPangan"/>
+    <mapping class="com.penggajian.entity.TunjanganJamMengajar"/>
+    <mapping class="com.penggajian.entity.TunjanganKhusus"/>
+    <mapping class="com.penggajian.entity.TunjanganStaffKurikulumEkstrakurikuluer"/>
+    <mapping class="com.penggajian.entity.TransaksiPenggajianPegawai"/>
+    <mapping class="com.penggajian.entity.DetailPerincianHonor"/>
+    <mapping class="com.penggajian.entity.TunjanganYayasan"/>
+  </session-factory>
+</hibernate-configuration>
